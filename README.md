@@ -1,7 +1,10 @@
-# Vue 3 + Vite
+# About me
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+I am a junior developer, of course **Self-Taught**.
 
-## Recommended IDE Setup
+You are probably familiar with the difficulty and know that it requires a lot of **Perseverance** and **Self‌‌-Control**.
+> "Especially for someone whose job is 360 degrees different from programming."
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+The reason I was drawn to programming was because of the **Idea** and the skill I have in **Problem-Solving** , because I think the best place for it is programming.
+
+
