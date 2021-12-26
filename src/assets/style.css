@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "Vazir";
+	src: url("./fonts/Vazir.eot");
+	/* IE9 Compat Modes */
+	src: url("./fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+		url("./fonts/Vazir.woff2") format("woff2"),
+		url("./fonts/Vazir.woff") format("woff"),
+		url("./fonts/Vazir.ttf") format("truetype");
+	/* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: "Ghasem";
+	src: url(./fonts/AGhasem.ttf);
+}
+
+@font-face {
+  font-family: "Parand";
+  src: url(./fonts/Mj_Parand.TTF);
+}
+
+body {
+	font-family: "Vazir";
+	font-size: 16px;
+	background-color: rgb(235, 235, 235);
+	color: #4F4F4F;
+}
+
+.sub-text {
+	color: #8b8b8b;
+}
+
+.ghasem {
+	font-family: "Ghasem";
+}
+
+.parand {
+  font-family: "Parand";
+}

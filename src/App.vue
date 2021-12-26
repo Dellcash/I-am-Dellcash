@@ -1,11 +1,7 @@
 <script setup>
-
+  import Me from './components/Portfolio.vue'
 </script>
 
 <template>
-  <h1 class="uppercase  font-bold">shit</h1>
+  <Me />
 </template>
-
-<style>
-
-</style>
