@@ -37,7 +37,7 @@ const info = ref([
 				</div>
 			</div>
 			<div class="text-sm sub-text">
-				<p class="w-4/5 tracking-wide">
+				<p class="w-5/6 tracking-wide">
 					توسعه دهنده <strong>خود‌آموخته</strong> و با <strong>انگیزه</strong>،
 					که مایل به <strong>یادگیری</strong> و ایجاد برنامه های کاربردی
 					<strong>UI برجسته</strong> است.
