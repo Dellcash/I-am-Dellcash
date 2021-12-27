@@ -38,6 +38,7 @@ const info = ref([
 			</div>
 			<div class="text-sm sub-text">
 				<p class="w-5/6 tracking-wide">
+					<!-- من <strong>جونیور</strong> دولوپر هستم. <br> -->
 					توسعه دهنده <strong>خود‌آموخته</strong> و با <strong>انگیزه</strong>،
 					که مایل به <strong>یادگیری</strong> و ایجاد برنامه های کاربردی
 					<strong>UI برجسته</strong> است.
