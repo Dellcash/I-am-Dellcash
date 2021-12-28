@@ -6,6 +6,7 @@ import fasirous from "../../assets/images/fasirous-leather.png";
 const experience = ref([
 	{
 		src: mehran,
+		href: "https://mehranpack.com/",
 		date: "مهر ۹۱ - فروردین ۹۳",
 		title: "عضو تیم شرکت تیم مهران پک",
 		description:
@@ -13,6 +14,7 @@ const experience = ref([
 	},
 	{
 		src: fasirous,
+		href: "tel:+989109201292",
 		date: "خرداد ۹۳ - اردیبهشت ۹۷",
 		title: "سرپرست تیم در توسعه طراحی",
 		description:
@@ -20,10 +22,11 @@ const experience = ref([
 	},
 	{
 		src: mehran,
+		href: "tel:",
 		date: "فروردین ۹۷ - اسفند ۱۴۰۰",
-		title: "عضو تیم شرکت چاپ ",
+		title: "عضو تیم شرکت چاپ سپانو",
 		description:
-			"شرکت فاسیروس پیشرو در بازار تهران در صنعت اکسسوری‌های چرمی اصیل",
+			"شرکت سپانو مستقر در جلوب تهران که ارائه کننده خدمات چاپ و طراحی پوشاک است.",
 	},
 ]);
 </script>
@@ -34,7 +37,9 @@ const experience = ref([
 		<div class="exp">
 			<div v-for="exp in experience" :key="exp" class="">
 				<div class="flex items-center space-y-7">
-					<img :src="exp.src" alt="company logo" class="w-24 pl-5 mb-7" />
+					<a :href="exp.href" target="_blank" class="w-60"
+						><img :src="exp.src" alt="company logo" class="pl-5 mb-7"
+					/></a>
 					<div>
 						<h4 class="pb-1 text-xs tracking-tighter sub-text">
 							{{ exp.date }}
@@ -51,7 +56,7 @@ const experience = ref([
 </template>
 
 <style scoped>
-.exp:last-child{
-  margin-bottom: .5rem;
+.exp:last-child {
+	margin-bottom: 0.5rem;
 }
 </style>
