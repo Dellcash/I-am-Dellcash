@@ -1,5 +1,5 @@
 <template>
-	<div dir="ltr" class="p-5 m-5 bg-white rounded-md">
+	<div dir="ltr" class="p-5 m-5 bg-white rounded-lg">
 		<h1 style="direction: rtl" class="text-xl font-bold mb-3">فرانت_اند</h1>
 		<div class="space-y-2 tracking-tighter">
 			<!-- Vue -->

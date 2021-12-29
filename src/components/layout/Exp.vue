@@ -2,13 +2,14 @@
 import { ref } from "vue";
 import mehran from "../../assets/images/mh-pack-1.png";
 import fasirous from "../../assets/images/fasirous-leather.png";
+import sepano from '../../assets/images/sepano.png'
 
 const experience = ref([
 	{
 		src: mehran,
 		href: "https://mehranpack.com/",
 		date: "مهر ۹۱ - فروردین ۹۳",
-		title: "عضو تیم شرکت تیم مهران پک",
+		title: "عضو تیم شرکت مهران پک",
 		description:
 			"مهران پک مجرب در زمینه طراحی ، چاپ و تولید انواع جعبه های فانتزی",
 	},
@@ -16,12 +17,12 @@ const experience = ref([
 		src: fasirous,
 		href: "tel:+989109201292",
 		date: "خرداد ۹۳ - اردیبهشت ۹۷",
-		title: "سرپرست تیم در توسعه طراحی",
+		title: "سرپرست تیم توسعه و طراحی",
 		description:
 			"شرکت فاسیروس پیشرو در بازار تهران در صنعت اکسسوری‌های چرمی اصیل",
 	},
 	{
-		src: mehran,
+		src: sepano,
 		href: "tel:",
 		date: "فروردین ۹۷ - اسفند ۱۴۰۰",
 		title: "عضو تیم شرکت چاپ سپانو",
@@ -32,7 +33,7 @@ const experience = ref([
 </script>
 
 <template>
-	<section class="p-5 m-5 bg-white rounded-md">
+	<section class="p-5 m-5 bg-white rounded-lg">
 		<h1 class="text-xl font-bold tracking-wide">تجارب</h1>
 		<div class="exp">
 			<div v-for="exp in experience" :key="exp" class="">
@@ -44,7 +45,7 @@ const experience = ref([
 						<h4 class="pb-1 text-xs tracking-tighter sub-text">
 							{{ exp.date }}
 						</h4>
-						<h1 class="text-xs font-bold">{{ exp.title }}</h1>
+						<h1 class="text-xs font-bold tracking-tighter">{{ exp.title }}</h1>
 						<p class="pt-3 text-xs sub-text">
 							{{ exp.description }}
 						</p>

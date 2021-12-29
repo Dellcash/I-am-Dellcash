@@ -16,8 +16,8 @@ const info = ref([
 </script>
 
 <template>
-	<section class="p-5 m-5 bg-white rounded-md">
-		<img src="../../assets/images/dellcash.png" alt="photo of me" class="rounded-md" />
+	<section class="p-5 m-5 bg-white rounded-lg">
+		<img src="../../assets/images/dellcash.png" alt="photo of me" class="rounded-lg" />
 		<div class="pt-3 space-y-3">
 			<div>
 				<h1 class="text-2xl font-bold tracking-tight">امید دلکش</h1>
