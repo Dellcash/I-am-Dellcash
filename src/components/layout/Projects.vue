@@ -10,6 +10,11 @@ import tomedoMobile from "../../assets/images/tomedo-mobile.png";
 import tomedoDesktop from "../../assets/images/tomedo.png";
 import urlShortenerMobile from "../../assets/images/url-shortener-mobile.png";
 import urlShortenerDesktop from "../../assets/images/url-shortener.png";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/pagination";
+import SwiperCore, { Pagination } from "swiper";
+SwiperCore.use([Pagination]);
 
 const projects = ref([
 	{
@@ -44,7 +49,7 @@ const projects = ref([
 		t3: "firebase#",
 		title: "ویکوو",
 		desctription:
-			"<strong>ویکوو</strong> یک پروژه <strong>fullstack</strong> هست که با استفاده از  <strong>vuejs</strong> و <strong>firebase</strong> پیاده سازی شده.",
+			"<strong>ویکوو</strong> یک پروژه <strong>fullstack</strong> هست که با استفاده از  <strong>vuejs</strong> و <strong>firebase</strong> پیاده سازی شده و وب اپلیکشن محسوب می‌شود.",
 		live: "https://whico.netlify.app/",
 		code: "https://github.com/Dellcash/whico",
 	},
@@ -80,11 +85,16 @@ const projects = ref([
 		<div class="px-5 py-2 mx-5 mb-3 bg-white rounded-lg">
 			<h1 class="text-xl font-bold tracking-wide">پروژه‌ها</h1>
 		</div>
-		<div class="space-y-5">
-			<div
+		<swiper
+			:pagination="{
+				dynamicBullets: true,
+			}"
+			class="mySwiper"
+		>
+			<swiper-slide
 				v-for="project in projects"
 				:key="project"
-				class="p-5 mx-5 bg-white rounded-lg"
+				class="p-5 mx-5 bg-white rounded-lg sp mb-7"
 			>
 				<!-- project images -->
 				<div class="flex w-full p-4 mb-4 bg-blue-100 rounded-lg">
@@ -104,11 +114,6 @@ const projects = ref([
 					</div>
 					<div class="mt-4">
 						<h1 class="pb-2 text-lg font-bold">{{ project.title }}</h1>
-						<!-- <p class="text-sm tracking-tight">
-							پروژه‌ <strong>ردیاب کوید</strong> این فرصت رو به من داد تا تجربه
-							بیشتری کار با <strong>API</strong> و
-							<strong>Asynchronous</strong> در جاوااسکریپت کسب کنم.
-						</p> -->
 						<p class="text-sm tracking-tight" v-html="project.desctription"></p>
 					</div>
 					<div class="mt-8 text-sm">
@@ -140,7 +145,13 @@ const projects = ref([
 						</button>
 					</div>
 				</div>
-			</div>
-		</div>
+			</swiper-slide>
+		</swiper>
 	</section>
 </template>
+
+<style scoped>
+.sp {
+	width: 301px !important;
+}
+</style>
