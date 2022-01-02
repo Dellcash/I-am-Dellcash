@@ -35,11 +35,11 @@ const experience = ref([
 <template>
 	<section class="p-5 m-5 bg-white rounded-lg">
 		<h1 class="text-xl font-bold tracking-wide">تجارب</h1>
-		<div class="exp">
-			<div v-for="exp in experience" :key="exp" class="">
-				<div class="flex items-center space-y-7">
-					<a :href="exp.href" target="_blank" class="w-60"
-						><img :src="exp.src" alt="company logo" class="pl-5 mb-7"
+		<div class="exp sm:flex">
+			<div v-for="exp in experience" :key="exp" class="sm:w-1/3">
+				<div class="flex items-center space-y-7 sm:space-y-0 sm:items-start sm:mt-4">
+					<a :href="exp.href" target="_blank" class="w-60 sm:w-48"
+						><img :src="exp.src" alt="company logo" class="pl-5 mb-7 sm:pl-2 sm:mb-10"
 					/></a>
 					<div>
 						<h4 class="pb-1 text-xs tracking-tighter sub-text">

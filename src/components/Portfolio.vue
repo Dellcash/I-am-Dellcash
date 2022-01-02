@@ -9,7 +9,7 @@ import Footer from "./layout/Footer.vue";
 </script>
 
 <template>
-	<section class="space-y-10 mb-1 mt-10">
+	<section class="space-y-10 mb-1 mt-10 sm:space-y-5">
 		<Card />
 		<Progress />
 		<Exp />

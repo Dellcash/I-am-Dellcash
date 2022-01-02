@@ -89,21 +89,21 @@ const projects = ref([
 			:pagination="{
 				dynamicBullets: true,
 			}"
-			class="mySwiper cursor-pointer"
+			class="cursor-pointer mySwiper"
 		>
 			<swiper-slide
 				v-for="project in projects"
 				:key="project"
-				class="p-5 mx-5 bg-white rounded-lg sp mb-7"
+				class="p-5 mx-5 bg-white rounded-lg sp mb-7 sm:mb-2"
 			>
 				<!-- project images -->
-				<div class="flex w-full p-4 mb-4 bg-blue-100 rounded-lg">
+				<div class="flex w-full p-4 mb-4 bg-blue-100 rounded-lg sm:p-8">
 					<img
 						:src="project.mobile"
 						alt="mobile view"
-						class="w-10 rounded-lg"
+						class="w-10 rounded-lg sm:w-24"
 					/>
-					<img :src="project.desktop" alt="desktop view" class="w-48 pr-2" />
+					<img :src="project.desktop" alt="desktop view" class="w-48 pr-2 sm:w-5/6 sm:pr-6" />
 				</div>
 				<!-- details -->
 				<div>
@@ -146,5 +146,10 @@ const projects = ref([
 <style scoped>
 .sp {
 	width: 88.5% !important;
+}
+@media (min-width: 640px) {
+	.sp {
+		width: 94.5% !important;
+	}
 }
 </style>
