@@ -23,7 +23,7 @@ const experience = ref([
 	},
 	{
 		src: sepano,
-		href: "tel:",
+		href: "tel:+989122904930",
 		date: "فروردین ۹۷ - اسفند ۱۴۰۰",
 		title: "عضو تیم شرکت چاپ سپانو",
 		description:

@@ -83,7 +83,7 @@ const projects = ref([
 <template>
 	<section>
 		<div class="px-5 py-2 mx-5 mb-3 bg-white rounded-lg">
-			<h1 class="text-xl font-bold tracking-wide">پروژه‌ها</h1>
+			<h1 class="text-xl font-bold tracking-wide">پروژه‌ها (۵)</h1>
 		</div>
 		<swiper
 			:pagination="{
@@ -132,14 +132,7 @@ const projects = ref([
 							<a :href="project.live" target="_blank">پیش‌نمایش</a>
 						</button>
 						<button
-							class="
-								px-8
-								py-1
-								text-blue-500
-								border-2 border-blue-500
-								rounded-lg
-								hover:bg-blue-500 hover:text-white hover:border-transparent
-							"
+							class="px-8 py-1 text-blue-500 border-2 border-blue-500 rounded-lg hover:bg-blue-500 hover:text-white hover:border-transparent"
 						>
 							<a :href="project.code" target="_blank">کد</a>
 						</button>
@@ -152,6 +145,6 @@ const projects = ref([
 
 <style scoped>
 .sp {
-	width: 301px !important;
+	width: 88.5% !important;
 }
 </style>
