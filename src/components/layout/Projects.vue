@@ -89,7 +89,7 @@ const projects = ref([
 			:pagination="{
 				dynamicBullets: true,
 			}"
-			class="mySwiper"
+			class="mySwiper cursor-pointer"
 		>
 			<swiper-slide
 				v-for="project in projects"
@@ -114,7 +114,7 @@ const projects = ref([
 					</div>
 					<div class="mt-4">
 						<h1 class="pb-2 text-lg font-bold">{{ project.title }}</h1>
-						<p class="text-sm tracking-tight" v-html="project.desctription"></p>
+						<p class="text-sm tracking-tight sub-text" v-html="project.desctription"></p>
 					</div>
 					<div class="mt-8 text-sm">
 						<button

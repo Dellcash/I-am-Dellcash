@@ -5,15 +5,17 @@ import Exp from "./layout/Exp.vue";
 import Projects from "./layout/Projects.vue";
 import Blog from "./layout/Blog.vue";
 import Hobby from "./layout/Hobby.vue";
+import Footer from "./layout/Footer.vue";
 </script>
 
 <template>
-	<section class="space-y-8">
+	<section class="space-y-10 mb-1 mt-10">
 		<Card />
 		<Progress />
 		<Exp />
 		<Projects />
 		<Blog />
 		<Hobby />
+		<Footer />
 	</section>
 </template>

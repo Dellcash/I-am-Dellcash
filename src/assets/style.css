@@ -10,20 +10,19 @@
 }
 
 @font-face {
-	font-family: "Ghasem";
-	src: url(./fonts/AGhasem.ttf);
+	font-family: "Nastaliq";
+	src: url("./fonts/IranNastaliq.ttf");
 }
 
-@font-face {
-  font-family: "Parand";
-  src: url(./fonts/Mj_Parand.TTF);
+.nastaliq {
+	font-family: "Nastaliq";
 }
 
 body {
 	font-family: "Vazir";
 	font-size: 16px;
 	background-color: rgb(235, 235, 235);
-	color: #4F4F4F;
+	color: #4f4f4f;
 }
 
 .sub-text {
@@ -35,6 +34,5 @@ body {
 }
 
 .parand {
-  font-family: "Parand";
+	font-family: "Parand";
 }
-

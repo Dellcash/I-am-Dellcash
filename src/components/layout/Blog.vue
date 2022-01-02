@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="text-sm mt-60">
-			<p>
+			<p class="sub-text">
 				<strong>"One Piece"</strong> نام نسخه سوم ویو‌جی‌اس است. "آپدیت‌های بزرگ
 				ویوو هر کدوم با یه اسم انیمه خاص نام‌گذاری می‌شن."
 			</p>

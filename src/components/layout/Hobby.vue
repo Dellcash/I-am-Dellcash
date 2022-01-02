@@ -30,15 +30,15 @@ const hobbies = ref([
 <template>
 	<section class="p-5 m-5 bg-white rounded-lg">
 		<h1 class="text-lg font-bold tracking-wide">تفریحات</h1>
-		<div class="mt-3 space-y-5">
+		<div class="mt-5 space-y-5">
 			<div class="text-sm" v-for="hobby in hobbies" :key="hobby">
 				<img
 					:src="hobby.src"
 					:alt="hobby.alt"
-					class="rounded-md object-cover h-24 w-full"
+					class="rounded-md object-cover h-24 w-full "
 				/>
 				<h1 class="font-bold mt-3 pr-1">{{ hobby.title }}</h1>
-				<p class="pt-2 pr-1 tracking-tight">{{ hobby.description }}</p>
+				<p class="pt-2 pr-1 tracking-tight sub-text">{{ hobby.description }}</p>
 			</div>
 		</div>
 	</section>
