@@ -101,9 +101,9 @@ const projects = ref([
 					<img
 						:src="project.mobile"
 						alt="mobile view"
-						class="w-10 rounded-lg sm:w-24"
+						class="w-10 rounded-lg sm:w-24 mobile"
 					/>
-					<img :src="project.desktop" alt="desktop view" class="w-48 pr-2 sm:w-5/6 sm:pr-6" />
+					<img :src="project.desktop" alt="desktop view" class="desktop pr-2 sm:pr-6" />
 				</div>
 				<!-- details -->
 				<div>
@@ -147,9 +147,39 @@ const projects = ref([
 .sp {
 	width: 88.5% !important;
 }
+@media (max-width: 320px) {
+	.sp {
+		width: 87.2% !important;
+	}
+	.desktop{
+		width: 10.5rem;
+	}
+}
+@media (min-width: 375px){
+	.desktop{
+		width: 13.6rem;
+	}
+}
+@media (min-width: 425px) {
+	.sp {
+		width: 90.7% !important;
+	}
+	.desktop{
+		width: 15.9rem;
+	}
+	.mobile{ 
+		width: 3.4rem;
+	}
+}
 @media (min-width: 640px) {
 	.sp {
-		width: 94.5% !important;
+		width: 94.8% !important;
+	}
+	.desktop{
+		width: 31.7rem;
+	}
+	.mobile{ 
+		width: 7.4rem;
 	}
 }
 </style>
