@@ -26,6 +26,7 @@ const blogs = ref([
 				overflow-x-hidden
 				bg-white
 				rounded-lg
+				sm:my-0
 			"
 			v-for="blog in blogs"
 			:key="blog"

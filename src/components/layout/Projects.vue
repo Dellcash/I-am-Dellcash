@@ -94,7 +94,7 @@ const projects = ref([
 			<swiper-slide
 				v-for="project in projects"
 				:key="project"
-				class="p-5 mx-5 bg-white rounded-lg sp mb-7 sm:mb-2"
+				class="p-5 mx-5 bg-white rounded-lg sp mb-7 sm:mb-2 lg:mb-8"
 			>
 				<!-- project images -->
 				<div class="flex w-full p-4 mb-4 bg-blue-100 rounded-lg sm:p-8">
@@ -103,7 +103,11 @@ const projects = ref([
 						alt="mobile view"
 						class="w-10 rounded-lg sm:w-24 mobile"
 					/>
-					<img :src="project.desktop" alt="desktop view" class="desktop pr-2 sm:pr-6" />
+					<img
+						:src="project.desktop"
+						alt="desktop view"
+						class="pr-2 desktop sm:pr-6"
+					/>
 				</div>
 				<!-- details -->
 				<div>
@@ -114,7 +118,10 @@ const projects = ref([
 					</div>
 					<div class="mt-4">
 						<h1 class="pb-2 text-lg font-bold">{{ project.title }}</h1>
-						<p class="text-sm tracking-tight sub-text" v-html="project.desctription"></p>
+						<p
+							class="text-sm tracking-tight sub-text"
+							v-html="project.desctription"
+						></p>
 					</div>
 					<div class="mt-8 text-sm">
 						<button
@@ -151,12 +158,12 @@ const projects = ref([
 	.sp {
 		width: 87.2% !important;
 	}
-	.desktop{
+	.desktop {
 		width: 10.5rem;
 	}
 }
-@media (min-width: 375px){
-	.desktop{
+@media (min-width: 375px) {
+	.desktop {
 		width: 13.6rem;
 	}
 }
@@ -164,10 +171,10 @@ const projects = ref([
 	.sp {
 		width: 90.7% !important;
 	}
-	.desktop{
+	.desktop {
 		width: 15.9rem;
 	}
-	.mobile{ 
+	.mobile {
 		width: 3.4rem;
 	}
 }
@@ -175,11 +182,22 @@ const projects = ref([
 	.sp {
 		width: 94.8% !important;
 	}
-	.desktop{
-		width: 31.7rem;
+	.desktop {
+		width: 31.6rem;
 	}
-	.mobile{ 
+	.mobile {
 		width: 7.4rem;
+	}
+}
+@media (min-width: 1024px) {
+	.sp {
+		width: 95.7% !important;
+	}
+	.desktop {
+		width: 39.5rem;
+	}
+	.mobile {
+		width: 9.5rem;
 	}
 }
 </style>

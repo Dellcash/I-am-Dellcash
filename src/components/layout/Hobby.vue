@@ -28,7 +28,7 @@ const hobbies = ref([
 </script>
 
 <template>
-	<section class="p-5 m-5 bg-white rounded-lg">
+	<section class="p-5 m-5 bg-white rounded-lg sm:my-0">
 		<h1 class="text-lg font-bold tracking-wide">تفریحات</h1>
 		<div class="mt-5 space-y-5">
 			<div class="text-sm" v-for="hobby in hobbies" :key="hobby">
