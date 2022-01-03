@@ -14,8 +14,10 @@ import Footer from "./layout/Footer.vue";
 		<Progress />
 		<Exp />
 		<Projects />
-		<Blog />
-		<Hobby />
+		<div class="sm:flex sm:items-start">
+			<Blog />
+			<Hobby />
+		</div>
 		<Footer />
 	</section>
 </template>
