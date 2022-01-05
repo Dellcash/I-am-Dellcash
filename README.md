@@ -7,4 +7,4 @@ You are probably familiar with the difficulty and know that it requires a lot of
 
 The reason I was drawn to programming was because of the **Idea** and the skill I have in **Problem-Solving** , because I think the best place for it is programming.
 
-
+**live preview** <https://i-am-dellcash.netlify.app/>
