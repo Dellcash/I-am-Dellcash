@@ -108,7 +108,7 @@
 		</section>
 		<section
 			dir="ltr"
-			class="hidden p-5 m-5 bg-white rounded-lg design lg:block md:mt-0 md:w-1/3 lg:mt-6"
+			class="hidden p-5 m-5 bg-white rounded-lg design lg:block md:mt-0 md:w-1/3 lg:mt-6 lg:mb-0"
 		>
 			<h1 style="direction: rtl" class="mb-3 text-xl font-bold">طراحی</h1>
 			<div class="space-y-2 tracking-tighter lg:space-y-3">
@@ -149,6 +149,15 @@
 	}
 	.design {
 		width: 28rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.front {
+		width: 31rem;
+	}
+	.design {
+		width: 31rem;
 	}
 }
 </style>

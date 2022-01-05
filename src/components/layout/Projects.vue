@@ -82,8 +82,8 @@ const projects = ref([
 
 <template>
 	<section>
-		<div class="px-5 py-2 mx-5 mb-3 bg-white rounded-lg">
-			<h1 class="text-xl font-bold tracking-wide">پروژه‌ها (۵)</h1>
+		<div class="px-5 py-2 mx-5 mb-3 bg-white rounded-lg lg:mt-6">
+			<h1 class="text-xl font-bold tracking-wide lg:text-2xl">پروژه‌ها (۵)</h1>
 		</div>
 		<swiper
 			:pagination="{
@@ -94,7 +94,7 @@ const projects = ref([
 			<swiper-slide
 				v-for="project in projects"
 				:key="project"
-				class="p-5 mx-5 bg-white rounded-lg sp mb-7 md:mb-2"
+				class="p-5 mx-5 bg-white rounded-lg sp mb-7 md:mb-2 lg:mb-8"
 			>
 				<!-- project images -->
 				<div class="flex w-full p-4 mb-4 bg-blue-100 rounded-lg md:p-8">
@@ -103,18 +103,18 @@ const projects = ref([
 						alt="mobile view"
 						class="w-10 rounded-lg md:w-24 mobile"
 					/>
-					<img :src="project.desktop" alt="desktop view" class="desktop pr-2 md:pr-6" />
+					<img :src="project.desktop" alt="desktop view" class="pr-2 desktop md:pr-6" />
 				</div>
 				<!-- details -->
 				<div>
-					<div class="flex text-sm">
+					<div class="flex text-sm text-blue-500 lg:text-lg">
 						<h4 class="pl-3">{{ project.t3 }}</h4>
 						<h4 class="pl-3">{{ project.t2 }}</h4>
 						<h4>{{ project.t1 }}</h4>
 					</div>
 					<div class="mt-4">
-						<h1 class="pb-2 text-lg font-bold">{{ project.title }}</h1>
-						<p class="text-sm tracking-tight sub-text" v-html="project.desctription"></p>
+						<h1 class="pb-2 text-lg font-bold lg:text-2xl">{{ project.title }}</h1>
+						<p class="text-sm tracking-tight sub-text lg:text-lg lg:w-3/5" v-html="project.desctription"></p>
 					</div>
 					<div class="mt-8 text-sm">
 						<button
@@ -126,13 +126,14 @@ const projects = ref([
 								py-1.5
 								px-4
 								tracking-tighter
+								shadow-md
 								hover:bg-white hover:text-blue-500 hover:border-blue-500
 							"
 						>
 							<a :href="project.live" target="_blank">پیش‌نمایش</a>
 						</button>
 						<button
-							class="px-8 py-1 text-blue-500 border-2 border-blue-500 rounded-lg hover:bg-blue-500 hover:text-white hover:border-transparent"
+							class="px-8 py-1 text-blue-500 border-2 border-blue-500 rounded-lg shadow-md hover:bg-blue-500 hover:text-white hover:border-transparent"
 						>
 							<a :href="project.code" target="_blank">کد</a>
 						</button>
@@ -182,4 +183,18 @@ const projects = ref([
 		width: 7.4rem;
 	}
 }
+
+@media (min-width: 1024px) {
+	.sp {
+		width: 96% !important;
+	}
+	.desktop{
+		width: 45.3rem;
+	}
+	.mobile{ 
+		width: 10rem;
+	}
+}
 </style>
+
+

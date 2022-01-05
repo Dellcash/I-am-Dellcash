@@ -29,16 +29,16 @@ const hobbies = ref([
 
 <template>
 	<section class="p-5 m-5 bg-white rounded-lg">
-		<h1 class="text-lg font-bold tracking-wide">تفریحات</h1>
+		<h1 class="text-lg font-bold tracking-wide lg:text-xl">تفریحات</h1>
 		<div class="mt-5 space-y-5">
-			<div class="text-sm" v-for="hobby in hobbies" :key="hobby">
+			<div class="text-sm lg:text-lg" v-for="hobby in hobbies" :key="hobby">
 				<img
 					:src="hobby.src"
 					:alt="hobby.alt"
-					class="rounded-md object-cover h-24 md:h-32 w-full "
+					class="object-cover w-full h-24 rounded-md md:h-32 "
 				/>
 				<h1 class="font-bold mt-3.5 pr-1">{{ hobby.title }}</h1>
-				<p class="pt-2.5 pr-1 tracking-tight sub-text">{{ hobby.description }}</p>
+				<p class="pt-2.5 pr-1 tracking-tight sub-text lg:text-sm">{{ hobby.description }}</p>
 			</div>
 		</div>
 	</section>

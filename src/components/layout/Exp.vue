@@ -33,8 +33,8 @@ const experience = ref([
 </script>
 
 <template>
-	<section class="p-5 m-5 bg-white rounded-lg lg:w-1/2 lg:mt-0 lg:mr-0">
-		<h1 class="text-xl font-bold tracking-wide lg:pb-0.5">تجارب</h1>
+	<section class="p-5 m-5 bg-white rounded-lg lg:w-1/2 lg:mt-0 lg:mr-0 lg:mb-0">
+		<h1 class="text-xl font-bold tracking-wide lg:pb-0.5 lg:text-2xl">تجارب</h1>
 		<div class="exp md:flex lg:block">
 			<div v-for="exp in experience" :key="exp" class="md:w-1/3 lg:w-full">
 				<div class="flex items-center space-y-7 md:space-y-0 md:items-start md:mt-4">

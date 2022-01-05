@@ -20,15 +20,15 @@ const info = ref([
 		<img
 			src="../../assets/images/dellcash.png"
 			alt="photo of me"
-			class="rounded-lg md:w-48 lg:w-56"
+			class="rounded-lg md:w-48 lg:w-56 xl:w-64"
 		/>
 		<div class="pt-3 space-y-3 md:pr-5 md:pt-0 lg:pr-8">
 			<div class="space-y-3 md:flex md:items-center md:pb-2 lg:pb-6 md:justify-between">
 				<div>
-					<h1 class="text-2xl font-bold tracking-tight">امید دلکش</h1>
-					<h4 class="sub-text">فرانت‌_اند دولوپر</h4>
+					<h1 class="text-2xl font-bold tracking-tight lg:text-3xl">امید دلکش</h1>
+					<h4 class="sub-text lg:text-lg">فرانت‌_اند دولوپر</h4>
 				</div>
-				<div class="info">
+				<div class="info xl:pl-5">
 					<div v-for="inf in info" :key="inf">
 						<h4 class="flex items-end sub-text">
 							<span class="pl-2 text-xl material-icons">{{ inf.icon }}</span

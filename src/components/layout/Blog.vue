@@ -17,23 +17,14 @@ const blogs = ref([
 <template>
 	<section>
 		<div
-			class="
-				relative
-				z-10
-				p-5
-				m-5
-				md:ml-0
-				overflow-x-hidden
-				bg-white
-				rounded-lg
-			"
+			class="relative z-10 p-5 m-5 overflow-x-hidden bg-white rounded-lg md:ml-0"
 			v-for="blog in blogs"
 			:key="blog"
 		>
 			<div class="flex mt-2">
 				<div class="tracking-wide w-28">
-					<h4 class="mb-5 text-xs opacity-50">وبلاگ‌</h4>
-					<h1 class="text-xl font-bold leading-6">{{ blog.title }}</h1>
+					<h4 class="mb-5 text-xs opacity-50 lg:text-sm">وبلاگ‌</h4>
+					<h1 class="text-xl font-bold leading-6 lg:text-3xl title lg:tracking-wider">{{ blog.title }}</h1>
 				</div>
 				<div class="img">
 					<img :src="blog.src" alt="blog picture" />
@@ -88,6 +79,20 @@ strong {
 
 	.desc {
 		margin-top: 18rem;
+	}
+}
+@media (min-width: 1024px){
+	.img {
+		right: 16rem;
+		width: 70%;
+	}
+
+	.desc {
+		margin-top: 11.3rem;
+	}
+
+	.title{
+		line-height: 4rem;
 	}
 }
 </style>
