@@ -1,5 +1,5 @@
 # About me
-
+![Dellcash!](/assets/images/port.png "Dellcash")
 I am a junior developer, of course **Self-Taught**.
 
 You are probably familiar with the difficulty and know that it requires a lot of **Perseverance** and **Self‌‌-Control**.
