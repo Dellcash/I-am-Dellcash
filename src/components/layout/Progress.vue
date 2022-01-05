@@ -1,5 +1,5 @@
 <template>
-	<div class="">
+	<div class="font-bold">
 		<section dir="ltr" class="p-5 m-5 bg-white rounded-lg md:mt-0 front">
 			<h1 style="direction: rtl" class="mb-3 text-xl font-bold">فرانت_اند</h1>
 			<div
@@ -59,7 +59,7 @@
 						>
 							<div
 								class="bg-blue-600 h-2.5 rounded-full"
-								style="width: 65%"
+								style="width: 50%"
 							></div>
 						</div>
 					</div>
@@ -114,21 +114,25 @@
 			<div class="space-y-2 tracking-tighter lg:space-y-3">
 				<!-- Figma -->
 				<div class="flex items-center justify-between space-x-5">
-					<h3 class="pr-5">Figma</h3>
-					<div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+					<h3>Figma</h3>
+					<div
+						class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 w-3/4"
+					>
 						<div
 							class="bg-blue-600 h-2.5 rounded-full"
-							style="width: 35%"
+							style="width: 15%"
 						></div>
 					</div>
 				</div>
 				<!-- Photoshop -->
-				<div class="flex items-center space-x-3">
+				<div class="flex items-center justify-between space-x-5">
 					<h3>Photoshop</h3>
-					<div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+					<div
+						class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 w-3/4"
+					>
 						<div
 							class="bg-blue-600 h-2.5 rounded-full"
-							style="width: 15%"
+							style="width: 5%"
 						></div>
 					</div>
 				</div>
@@ -138,8 +142,8 @@
 </template>
 
 <style scoped>
-@media (min-width: 320px){
-	.tailwind{
+@media (min-width: 320px) {
+	.tailwind {
 		margin-right: -1rem;
 	}
 }

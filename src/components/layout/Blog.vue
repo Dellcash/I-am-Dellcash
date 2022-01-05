@@ -24,7 +24,11 @@ const blogs = ref([
 			<div class="flex mt-2">
 				<div class="tracking-wide w-28">
 					<h4 class="mb-5 text-xs opacity-50 lg:text-sm">وبلاگ‌</h4>
-					<h1 class="text-xl font-bold leading-6 lg:text-3xl title lg:tracking-wider">{{ blog.title }}</h1>
+					<h1
+						class="text-xl font-bold leading-6 lg:text-3xl title lg:tracking-wider"
+					>
+						{{ blog.title }}
+					</h1>
 				</div>
 				<div class="img">
 					<img :src="blog.src" alt="blog picture" />
@@ -54,19 +58,19 @@ strong {
 }
 
 @media (max-width: 320px) {
-		.desc{
+	.desc {
 		margin-top: 13rem;
 	}
 }
 
-@media (min-width: 375px){
-	.desc{
+@media (min-width: 375px) {
+	.desc {
 		margin-top: 17rem;
 	}
 }
 
 @media (min-width: 425px) {
-	.desc{
+	.desc {
 		margin-top: 20rem;
 	}
 }
@@ -81,7 +85,7 @@ strong {
 		margin-top: 18rem;
 	}
 }
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 	.img {
 		right: 16rem;
 		width: 70%;
@@ -91,8 +95,17 @@ strong {
 		margin-top: 11.3rem;
 	}
 
-	.title{
+	.title {
 		line-height: 4rem;
+	}
+}
+@media (min-width: 1440px) {
+	.img {
+		right: 16rem;
+		width: 70%;
+	}
+	.desc {
+		margin-top: 14rem;
 	}
 }
 </style>

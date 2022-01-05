@@ -11,7 +11,7 @@ const experience = ref([
 		date: "مهر ۹۱ - فروردین ۹۳",
 		title: "عضو تیم شرکت مهران پک",
 		description:
-			"مهران پک مجرب در زمینه طراحی ، چاپ و تولید انواع جعبه های فانتزی",
+			"مهران پک مجرب در زمینه طراحی ، چاپ و تولید انواع جعبه های فانتزی.",
 	},
 	{
 		src: fasirous,
@@ -19,7 +19,7 @@ const experience = ref([
 		date: "خرداد ۹۳ - اردیبهشت ۹۷",
 		title: "سرپرست تیم توسعه و طراحی",
 		description:
-			"شرکت فاسیروس پیشرو در بازار تهران در صنعت اکسسوری‌های چرمی اصیل",
+			"شرکت فاسیروس پیشرو در بازار بزرگ تهران در صنعت اکسسوری‌های چرمی اصیل.",
 	},
 	{
 		src: sepano,
@@ -64,6 +64,12 @@ const experience = ref([
 	.exp div:last-child div a img {
 		width: 6.5rem;
 		max-width: none;
+	}
+}
+@media (min-width: 1440px) {
+	.exp div:last-child div{
+		font-size:16px;
+		/* margin-right: 1rem */
 	}
 }
 </style>

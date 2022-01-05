@@ -30,7 +30,7 @@ const hobbies = ref([
 <template>
 	<section class="p-5 m-5 bg-white rounded-lg">
 		<h1 class="text-lg font-bold tracking-wide lg:text-xl">تفریحات</h1>
-		<div class="mt-5 space-y-5">
+		<div class="mt-5 space-y-5 hobby">
 			<div class="text-sm lg:text-lg" v-for="hobby in hobbies" :key="hobby">
 				<img
 					:src="hobby.src"
@@ -43,3 +43,11 @@ const hobbies = ref([
 		</div>
 	</section>
 </template>
+
+<style scoped>
+@media (min-width: 1440px){
+	.hobby div{
+		padding-bottom: 14px
+	}
+}
+</style>

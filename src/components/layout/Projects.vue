@@ -107,16 +107,16 @@ const projects = ref([
 				</div>
 				<!-- details -->
 				<div>
-					<div class="flex text-sm text-blue-500 lg:text-lg">
+					<div class="flex text-sm text-blue-500 lg:text-lg tag">
 						<h4 class="pl-3">{{ project.t3 }}</h4>
 						<h4 class="pl-3">{{ project.t2 }}</h4>
 						<h4>{{ project.t1 }}</h4>
 					</div>
 					<div class="mt-4">
-						<h1 class="pb-2 text-lg font-bold lg:text-2xl">{{ project.title }}</h1>
-						<p class="text-sm tracking-tight sub-text lg:text-lg lg:w-3/5" v-html="project.desctription"></p>
+						<h1 class="pb-2 text-lg font-bold lg:text-2xl title">{{ project.title }}</h1>
+						<p class="text-sm tracking-tight sub-text lg:text-lg lg:w-3/5 desc" v-html="project.desctription"></p>
 					</div>
-					<div class="mt-8 text-sm">
+					<div class="mt-8 text-sm btn">
 						<button
 							class="
 								ml-2
@@ -193,6 +193,38 @@ const projects = ref([
 	}
 	.mobile{ 
 		width: 10rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	.sp {
+		width: 96.5% !important;
+	}
+	.desktop{
+		width: 49.3rem;
+	}
+	.mobile{ 
+		width: 11.5rem;
+	}
+	.tag{
+		font-size: 1.3rem;
+	}
+	.title{
+		font-size: 1.8rem;
+	}
+	.desc{
+		font-size: 1.3rem;
+		padding-top: .5rem;
+		width: 70%;
+	}
+	.btn{
+		font-size: 1.3rem;
+	}
+	.btn button:first-child{
+		padding: 1rem 2rem;
+	}
+	.btn button:last-child{
+		padding: 15px 3.5rem;
 	}
 }
 </style>

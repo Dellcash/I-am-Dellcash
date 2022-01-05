@@ -28,10 +28,10 @@ const info = ref([
 					<h1 class="text-2xl font-bold tracking-tight lg:text-3xl">امید دلکش</h1>
 					<h4 class="sub-text lg:text-lg">فرانت‌_اند دولوپر</h4>
 				</div>
-				<div class="info xl:pl-5">
+				<div class="info lg:pl-5">
 					<div v-for="inf in info" :key="inf">
 						<h4 class="flex items-end sub-text">
-							<span class="pl-2 text-xl material-icons">{{ inf.icon }}</span
+							<span class="pl-2 text-xl material-icons lg:text-2xl">{{ inf.icon }}</span
 							><a
 								:href="inf.href"
 								target="_blank"
@@ -43,7 +43,7 @@ const info = ref([
 				</div>
 			</div>
 			<div
-				class="tracking-wide md:tracking-tight text-md md:space-y-2 sub-text md:text-sm md:pt-3 lg:text-base"
+				class="tracking-wide md:tracking-tight text-md md:space-y-2 sub-text md:text-sm md:pt-3 lg:text-base desc"
 			>
 				<p class="w-5/6">
 					<!-- من <strong>جونیور</strong> دولوپر هستم. <br> -->
@@ -64,5 +64,23 @@ const info = ref([
 <style scoped>
 .info div:last-child h4 a {
 	letter-spacing: 0.5px;
+}
+@media (min-width: 1024px) {
+	.info {
+		direction: ltr;
+	}
+	.info div h4 a {
+	padding-left: .5rem;
+}
+}
+@media (min-width: 1440px){
+	.info {
+		font-size: 18px;
+		direction: ltr;
+		margin-right: 23rem
+	}
+	.desc {
+		font-size: 18px;
+	}
 }
 </style>
