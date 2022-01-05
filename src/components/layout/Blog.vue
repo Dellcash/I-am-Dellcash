@@ -22,11 +22,10 @@ const blogs = ref([
 				z-10
 				p-5
 				m-5
-				sm:ml-0
+				md:ml-0
 				overflow-x-hidden
 				bg-white
 				rounded-lg
-				sm:my-0
 			"
 			v-for="blog in blogs"
 			:key="blog"
@@ -40,11 +39,11 @@ const blogs = ref([
 					<img :src="blog.src" alt="blog picture" />
 				</div>
 			</div>
-			<div class="text-sm mt-60 sm:mt-64 sm:pt-2.5 desc">
+			<div class="text-md mt-60 md:mt-64 md:pt-2.5 desc">
 				<p class="sub-text" v-html="blog.subTitle"></p>
 				<br />
-				<p class="hidden sm:block sub-text" v-html="blog.description"></p>
-				<h1 class="font-bold text-blue-500 lg:pt-3 sm:text-left">
+				<p class="hidden md:block sub-text" v-html="blog.description"></p>
+				<h1 class="font-bold text-blue-500 lg:pt-3 md:text-left">
 					<a href="https://vaw.netlify.app/">بیشتر...</a>
 				</h1>
 			</div>
@@ -88,7 +87,7 @@ strong {
 	}
 
 	.desc {
-		margin-top: 15.9rem;
+		margin-top: 18rem;
 	}
 }
 </style>

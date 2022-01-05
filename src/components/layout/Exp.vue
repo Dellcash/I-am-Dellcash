@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import mehran from "../../assets/images/mh-pack-1.png";
 import fasirous from "../../assets/images/fasirous-leather.png";
-import sepano from "../../assets/images/sepano.png";
+import sepano from '../../assets/images/sepano.png'
 
 const experience = ref([
 	{
@@ -17,7 +17,7 @@ const experience = ref([
 		src: fasirous,
 		href: "tel:+989109201292",
 		date: "خرداد ۹۳ - اردیبهشت ۹۷",
-		title: "سرپرست تیم توسعه و طراحی فاسیروس",
+		title: "سرپرست تیم توسعه و طراحی",
 		description:
 			"شرکت فاسیروس پیشرو در بازار تهران در صنعت اکسسوری‌های چرمی اصیل",
 	},
@@ -33,25 +33,20 @@ const experience = ref([
 </script>
 
 <template>
-	<section class="p-5 m-5 bg-white rounded-lg lg:w-3/6 lg:mt-0 lg:mr-0">
-		<h1 class="text-xl font-bold tracking-wide">تجارب</h1>
-		<div class="exp sm:flex lg:block">
-			<div v-for="exp in experience" :key="exp" class="sm:w-1/3 lg:w-full">
-				<div
-					class="flex items-center space-y-7 sm:space-y-0 sm:items-start sm:mt-4 lg:space-y-7"
-				>
-					<a :href="exp.href" target="_blank" class="w-60 sm:w-48 lg:w-32 lg:mt-8"
-						><img
-							:src="exp.src"
-							alt="company logo"
-							class="pl-5 mb-7 sm:pl-2 sm:mb-10 lg:pl-3"
+	<section class="p-5 m-5 bg-white rounded-lg lg:w-1/2 lg:mt-0 lg:mr-0">
+		<h1 class="text-xl font-bold tracking-wide lg:pb-0.5">تجارب</h1>
+		<div class="exp md:flex lg:block">
+			<div v-for="exp in experience" :key="exp" class="md:w-1/3 lg:w-full">
+				<div class="flex items-center space-y-7 md:space-y-0 md:items-start md:mt-4">
+					<a :href="exp.href" target="_blank" class="w-60 md:w-48 lg:w-28"
+						><img :src="exp.src" alt="company logo" class="pl-5 mb-7 md:pl-2 md:mb-10"
 					/></a>
 					<div class="text-xs lg:text-sm">
 						<h4 class="pb-1 tracking-tighter sub-text">
 							{{ exp.date }}
 						</h4>
 						<h1 class="font-bold tracking-tighter">{{ exp.title }}</h1>
-						<p class="pt-3 sub-text lg:w-5/6">
+						<p class="pt-3 sub-text lg:w-4/5">
 							{{ exp.description }}
 						</p>
 					</div>
@@ -64,5 +59,11 @@ const experience = ref([
 <style scoped>
 .exp:last-child {
 	margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+	.exp div:last-child div a img {
+		width: 6.5rem;
+		max-width: none;
+	}
 }
 </style>

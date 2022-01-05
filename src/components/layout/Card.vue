@@ -16,14 +16,14 @@ const info = ref([
 </script>
 
 <template>
-	<section class="p-5 m-5 bg-white rounded-lg sm:flex">
+	<section class="p-5 m-5 bg-white rounded-lg md:flex lg:mb-6">
 		<img
 			src="../../assets/images/dellcash.png"
 			alt="photo of me"
-			class="rounded-lg sm:w-48 lg:w-52"
+			class="rounded-lg md:w-48 lg:w-56"
 		/>
-		<div class="pt-3 space-y-3 sm:pr-5 sm:pt-0 lg:pr-8">
-			<div class="space-y-3 sm:flex sm:items-center sm:pb-2 sm:justify-between lg:mt-2">
+		<div class="pt-3 space-y-3 md:pr-5 md:pt-0 lg:pr-8">
+			<div class="space-y-3 md:flex md:items-center md:pb-2 lg:pb-6 md:justify-between">
 				<div>
 					<h1 class="text-2xl font-bold tracking-tight">امید دلکش</h1>
 					<h4 class="sub-text">فرانت‌_اند دولوپر</h4>
@@ -31,11 +31,11 @@ const info = ref([
 				<div class="info">
 					<div v-for="inf in info" :key="inf">
 						<h4 class="flex items-end sub-text">
-							<span class="pl-2 text-xl material-icons lg:pl-0 lg:pr-2">{{ inf.icon }}</span
+							<span class="pl-2 text-xl material-icons">{{ inf.icon }}</span
 							><a
 								:href="inf.href"
 								target="_blank"
-								class="tracking-tight sm:tracking-tighter hover:text-black"
+								class="tracking-tight md:tracking-tighter hover:text-black"
 								>{{ inf.title }}</a
 							>
 						</h4>
@@ -43,7 +43,7 @@ const info = ref([
 				</div>
 			</div>
 			<div
-				class="text-sm tracking-wide sm:tracking-tight sm:space-y-2 sub-text lg:pt-2"
+				class="tracking-wide md:tracking-tight text-md md:space-y-2 sub-text md:text-sm md:pt-3 lg:text-base"
 			>
 				<p class="w-5/6">
 					<!-- من <strong>جونیور</strong> دولوپر هستم. <br> -->
@@ -51,7 +51,7 @@ const info = ref([
 					که مایل به <strong>یادگیری</strong> و ایجاد برنامه های کاربردی
 					<strong>UI برجسته</strong> است.
 				</p>
-				<p class="hidden w-4/6 sm:block">
+				<p class="hidden w-4/6 md:block md:pt-3">
 					من روی نوشتن <strong>HTML قابل دسترس</strong> ، استفاده از
 					<strong>شیوه های مدرن CSS</strong> و نوشتن
 					<strong>جاوا اسکریپت تمیز</strong> تمرکز می کنم.
@@ -64,11 +64,5 @@ const info = ref([
 <style scoped>
 .info div:last-child h4 a {
 	letter-spacing: 0.5px;
-}
-
-@media (min-width: 768px) {
-	.info {
-		direction: ltr;
-	}
 }
 </style>

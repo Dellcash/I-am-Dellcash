@@ -9,11 +9,11 @@ import Footer from "./layout/Footer.vue";
 </script>
 
 <template>
-	<section class="mt-10 mb-1 space-y-10 sm:space-y-5 sm:mt-0 lg:px-52 lg:mt-10">
+	<section class="mt-10 mb-1 space-y-10 sm:space-y-5 lg:mx-40">
 		<Card />
-		<div class="lg:flex lg:justify-between lg:items-start">
+		<div class="lg:flex lg:justify-between lg:items-center">
 			<Progress />
-			<Exp />
+		<Exp />
 		</div>
 		<Projects />
 		<div class="sm:flex sm:items-start">
