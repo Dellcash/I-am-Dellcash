@@ -100,24 +100,23 @@ const projects = ref([
 			:navigation="true"
 			class="mySwiper"
 		>
-			<swiper-slide
-				v-for="project in projects"
-				:key="project"
-				class="mb-10"
-			>
+			<swiper-slide v-for="project in projects" :key="project" class="mb-10">
 				<div class="p-5 mx-5 bg-white rounded-lg">
 					<!-- project images -->
-					<div class="flex w-full p-4 mb-4 bg-blue-100 rounded-lg md:p-8">
+					<div class="flex p-4 mb-4 bg-blue-100 rounded-lg md:p-8">
 						<img
 							:src="project.mobile"
 							alt="mobile view"
-							class="w-10 rounded-lg md:w-24 mobile"
+							class="w-full rounded-md mobile"
 						/>
-						<img
-							:src="project.desktop"
-							alt="desktop view"
-							class="pr-2 desktop md:pr-6"
-						/>
+							<!-- class="w-10 rounded-lg md:w-24 mobile" -->
+						<div class="hidden md:block desktop">
+							<img
+								:src="project.desktop"
+								alt="desktop view"
+								class="pr-2 md:pr-6"
+							/>
+						</div>
 					</div>
 					<!-- details -->
 					<div>
@@ -165,64 +164,24 @@ const projects = ref([
 </template>
 
 <style scoped>
-.sp {
-	width: 88.5% !important;
-}
-@media (max-width: 320px) {
-	.sp {
-		width: 87.2% !important;
-	}
-	.desktop {
-		width: 10.5rem;
-	}
-}
-@media (min-width: 375px) {
-	.desktop {
-		width: 13.6rem;
-	}
-}
-@media (min-width: 425px) {
-	.sp {
-		width: 90.7% !important;
-	}
-	.desktop {
-		width: 15.9rem;
-	}
-	.mobile {
-		width: 3.4rem;
-	}
-}
 @media (min-width: 640px) {
-	.sp {
-		width: 94.8% !important;
+	.mobile {
+		width: 7rem;
 	}
 	.desktop {
-		width: 31.7rem;
-	}
-	.mobile {
-		width: 7.4rem;
+		display: block;
+		padding-right: .5rem;
 	}
 }
 
 @media (min-width: 1024px) {
-	.sp {
-		width: 96% !important;
-	}
-	.desktop {
-		width: 44.4rem;
-	}
+
 	.mobile {
 		width: 11rem;
 	}
 }
 
 @media (min-width: 1440px) {
-	.sp {
-		width: 96.5% !important;
-	}
-	.desktop {
-		width: 49rem;
-	}
 	.mobile {
 		width: 12rem;
 	}
